@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		500CA3B0208FC39100F2CFC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500CA3AF208FC39100F2CFC6 /* AppDelegate.swift */; };
+		500CA3B2208FC39100F2CFC6 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500CA3B1208FC39100F2CFC6 /* TimelineViewController.swift */; };
+		500CA3B5208FC39100F2CFC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 500CA3B3208FC39100F2CFC6 /* Main.storyboard */; };
+		500CA3B7208FC39200F2CFC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 500CA3B6208FC39200F2CFC6 /* Assets.xcassets */; };
+		500CA3BA208FC39200F2CFC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 500CA3B8208FC39200F2CFC6 /* LaunchScreen.storyboard */; };
+		500CA3D5208FD06200F2CFC6 /* TootbotMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500CA3D3208FD06200F2CFC6 /* TootbotMessageCell.swift */; };
+		500CA3D6208FD06200F2CFC6 /* TootbotMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 500CA3D4208FD06200F2CFC6 /* TootbotMessageCell.xib */; };
+		5089F135209431BC007C405B /* MastodonPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5089F134209431BC007C405B /* MastodonPost.swift */; };
+		C7478C3A870DEB210A8B9D2D /* Pods_Tootbot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829F31FEFB74DCE2E03F90F2 /* Pods_Tootbot.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		500CA3AC208FC39100F2CFC6 /* Tootbot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tootbot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		500CA3AF208FC39100F2CFC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		500CA3B1208FC39100F2CFC6 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		500CA3B4208FC39100F2CFC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		500CA3B6208FC39200F2CFC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		500CA3B9208FC39200F2CFC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		500CA3BB208FC39200F2CFC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		500CA3D3208FD06200F2CFC6 /* TootbotMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TootbotMessageCell.swift; sourceTree = "<group>"; };
+		500CA3D4208FD06200F2CFC6 /* TootbotMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TootbotMessageCell.xib; sourceTree = "<group>"; };
+		5089F134209431BC007C405B /* MastodonPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastodonPost.swift; sourceTree = "<group>"; };
+		56C037E220CE760CD066F60E /* Pods-Tootbot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tootbot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tootbot/Pods-Tootbot.debug.xcconfig"; sourceTree = "<group>"; };
+		829F31FEFB74DCE2E03F90F2 /* Pods_Tootbot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tootbot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E724BEF4FFD3359867694CB7 /* Pods-Tootbot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tootbot.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tootbot/Pods-Tootbot.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		500CA3A9208FC39100F2CFC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7478C3A870DEB210A8B9D2D /* Pods_Tootbot.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		500CA3A3208FC39100F2CFC6 = {
+			isa = PBXGroup;
+			children = (
+				500CA3AE208FC39100F2CFC6 /* Tootbot */,
+				500CA3AD208FC39100F2CFC6 /* Products */,
+				DF4D56EA438B8FC854338B65 /* Pods */,
+				76BE546383EC472371D45A84 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		500CA3AD208FC39100F2CFC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				500CA3AC208FC39100F2CFC6 /* Tootbot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		500CA3AE208FC39100F2CFC6 /* Tootbot */ = {
+			isa = PBXGroup;
+			children = (
+				5089F1332093EAA7007C405B /* Controller */,
+				5089F1322093EA98007C405B /* Model */,
+				500CA3CD208FCEA600F2CFC6 /* View */,
+				500CA3AF208FC39100F2CFC6 /* AppDelegate.swift */,
+				500CA3B6208FC39200F2CFC6 /* Assets.xcassets */,
+				500CA3B8208FC39200F2CFC6 /* LaunchScreen.storyboard */,
+				500CA3BB208FC39200F2CFC6 /* Info.plist */,
+			);
+			path = Tootbot;
+			sourceTree = "<group>";
+		};
+		500CA3CD208FCEA600F2CFC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				500CA3B3208FC39100F2CFC6 /* Main.storyboard */,
+				500CA3D3208FD06200F2CFC6 /* TootbotMessageCell.swift */,
+				500CA3D4208FD06200F2CFC6 /* TootbotMessageCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5089F1322093EA98007C405B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5089F134209431BC007C405B /* MastodonPost.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5089F1332093EAA7007C405B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				500CA3B1208FC39100F2CFC6 /* TimelineViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		76BE546383EC472371D45A84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				829F31FEFB74DCE2E03F90F2 /* Pods_Tootbot.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF4D56EA438B8FC854338B65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56C037E220CE760CD066F60E /* Pods-Tootbot.debug.xcconfig */,
+				E724BEF4FFD3359867694CB7 /* Pods-Tootbot.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		500CA3AB208FC39100F2CFC6 /* Tootbot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 500CA3BE208FC39200F2CFC6 /* Build configuration list for PBXNativeTarget "Tootbot" */;
+			buildPhases = (
+				400451DC665F3EB4CE15E205 /* [CP] Check Pods Manifest.lock */,
+				500CA3A8208FC39100F2CFC6 /* Sources */,
+				500CA3A9208FC39100F2CFC6 /* Frameworks */,
+				500CA3AA208FC39100F2CFC6 /* Resources */,
+				DF68EC7B5CD2DA373ADE031E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tootbot;
+			productName = Tootbot;
+			productReference = 500CA3AC208FC39100F2CFC6 /* Tootbot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		500CA3A4208FC39100F2CFC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = JO;
+				TargetAttributes = {
+					500CA3AB208FC39100F2CFC6 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 500CA3A7208FC39100F2CFC6 /* Build configuration list for PBXProject "Tootbot" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 500CA3A3208FC39100F2CFC6;
+			productRefGroup = 500CA3AD208FC39100F2CFC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				500CA3AB208FC39100F2CFC6 /* Tootbot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		500CA3AA208FC39100F2CFC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500CA3BA208FC39200F2CFC6 /* LaunchScreen.storyboard in Resources */,
+				500CA3B7208FC39200F2CFC6 /* Assets.xcassets in Resources */,
+				500CA3B5208FC39100F2CFC6 /* Main.storyboard in Resources */,
+				500CA3D6208FD06200F2CFC6 /* TootbotMessageCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		400451DC665F3EB4CE15E205 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tootbot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF68EC7B5CD2DA373ADE031E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tootbot/Pods-Tootbot-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVPullToRefresh/SVPullToRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVPullToRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tootbot/Pods-Tootbot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		500CA3A8208FC39100F2CFC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5089F135209431BC007C405B /* MastodonPost.swift in Sources */,
+				500CA3B2208FC39100F2CFC6 /* TimelineViewController.swift in Sources */,
+				500CA3B0208FC39100F2CFC6 /* AppDelegate.swift in Sources */,
+				500CA3D5208FD06200F2CFC6 /* TootbotMessageCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		500CA3B3208FC39100F2CFC6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				500CA3B4208FC39100F2CFC6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		500CA3B8208FC39200F2CFC6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				500CA3B9208FC39200F2CFC6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		500CA3BC208FC39200F2CFC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		500CA3BD208FC39200F2CFC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		500CA3BF208FC39200F2CFC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56C037E220CE760CD066F60E /* Pods-Tootbot.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UYCY78T8VK;
+				INFOPLIST_FILE = Tootbot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesusomar.Tootbot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		500CA3C0208FC39200F2CFC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E724BEF4FFD3359867694CB7 /* Pods-Tootbot.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UYCY78T8VK;
+				INFOPLIST_FILE = Tootbot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesusomar.Tootbot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		500CA3A7208FC39100F2CFC6 /* Build configuration list for PBXProject "Tootbot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				500CA3BC208FC39200F2CFC6 /* Debug */,
+				500CA3BD208FC39200F2CFC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		500CA3BE208FC39200F2CFC6 /* Build configuration list for PBXNativeTarget "Tootbot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				500CA3BF208FC39200F2CFC6 /* Debug */,
+				500CA3C0208FC39200F2CFC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 500CA3A4208FC39100F2CFC6 /* Project object */;
+}
