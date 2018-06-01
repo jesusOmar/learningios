@@ -17,7 +17,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="o8P-qo-Gga">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="1" green="0.34901960780000002" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -39,7 +39,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ghq-B9-jiY">
-                                <rect key="frame" x="0.0" y="82" width="375" height="730"/>
+                                <rect key="frame" x="0.0" y="82" width="375" height="630"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -53,26 +53,51 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6SU-3G-0gW">
-                                <rect key="frame" x="321" y="44" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="*"/>
-                                <connections>
-                                    <action selector="refreshButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MBN-ck-0aI"/>
-                                </connections>
-                            </button>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D6b-4y-Jot">
+                                <rect key="frame" x="0.0" y="712" width="375" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Pcw-Dc-fIr"/>
+                                </constraints>
+                                <items>
+                                    <tabBarItem title="" image="glyphicons-246-chat" id="33n-lf-ThH"/>
+                                    <tabBarItem title="" image="glyphicons-747-pending-notifications" id="IRv-EX-o3b"/>
+                                    <tabBarItem title="" image="glyphicons-28-search" id="HWj-ib-f62"/>
+                                    <tabBarItem image="glyphicons-4-user" id="kyY-wp-zvj"/>
+                                </items>
+                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="D6b-4y-Jot" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="B0e-9g-Pr0"/>
+                            <constraint firstAttribute="bottom" secondItem="D6b-4y-Jot" secondAttribute="bottom" id="MeH-15-pYm"/>
+                            <constraint firstItem="D6b-4y-Jot" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PbF-Ol-46z"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Timeline" id="r4E-Xf-v0a"/>
+                    <navigationItem key="navigationItem" title="Timeline" id="r4E-Xf-v0a">
+                        <barButtonItem key="leftBarButtonItem" title="menuButton" image="glyphicons-517-menu-hamburger" id="hDw-bD-19A">
+                            <color key="tintColor" red="0.28627450980392155" green="0.56862745098039214" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="addPostButton" image="glyphicons-151-edit" id="9rO-PN-fc2">
+                            <color key="tintColor" red="0.28627450980000002" green="0.56862745100000001" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="timelineTableView" destination="Ghq-B9-jiY" id="Or1-Iq-lRr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="116.74876847290641"/>
+            <point key="canvasLocation" x="-218" y="117"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="glyphicons-151-edit" width="24" height="21"/>
+        <image name="glyphicons-246-chat" width="24" height="19"/>
+        <image name="glyphicons-28-search" width="23" height="23"/>
+        <image name="glyphicons-4-user" width="23" height="22"/>
+        <image name="glyphicons-517-menu-hamburger" width="22" height="18"/>
+        <image name="glyphicons-747-pending-notifications" width="27" height="24"/>
+    </resources>
 </document>
