@@ -10,8 +10,8 @@ import UIKit
 
 class TootbotMessageCell: UITableViewCell {
     @IBOutlet weak var authorName: UILabel!
+    @IBOutlet weak var author_image: UIImageView!
     @IBOutlet weak var html: UILabel!
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()

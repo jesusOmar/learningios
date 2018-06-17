@@ -6,6 +6,8 @@ target 'Tootbot' do
 
   # Pods for Tootbot
   pod 'RealmSwift'
-  pod 'MastodonKit', '~> 1.0'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+  pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
 
 end

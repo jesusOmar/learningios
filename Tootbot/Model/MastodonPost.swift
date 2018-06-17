@@ -12,5 +12,7 @@ import RealmSwift
 class MastodonPost: Object {
     @objc dynamic var id = 0
     @objc dynamic var author_name: String = ""
+    @objc dynamic var author_image: String = ""
     @objc dynamic var html: String = ""
+    @objc dynamic var account: MastodonAccount?
 }
